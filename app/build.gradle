@@ -40,4 +40,14 @@ dependencies {
     compile "com.jakewharton:butterknife:$rootProject.butterknifeVersion"
     annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.butterknifeVersion"
     compile "com.jakewharton.timber:timber:$rootProject.timberVersion"
+    compile "com.squareup.sqlbrite:sqlbrite:$rootProject.sqlbriteVersion"
+
+    provided "com.google.auto.value:auto-value:$rootProject.autovalueVersion"
+    annotationProcessor "com.google.auto.value:auto-value:$rootProject.autovalueVersion"
+    annotationProcessor "com.ryanharter.auto.value:auto-value-gson:$rootProject.autovalueGsonVersion"
+    provided "com.ryanharter.auto.value:auto-value-gson:$rootProject.autovalueGsonVersion"
+    annotationProcessor "com.ryanharter.auto.value:auto-value-parcel:$rootProject.autovalueParcelVersion"
+    // Optionally for TypeAdapter support
+    compile "com.ryanharter.auto.value:auto-value-parcel-adapter:$rootProject.autovalueParcelVersion"
+    compile "com.google.code.gson:gson:$rootProject.gsonVersion"
 }
